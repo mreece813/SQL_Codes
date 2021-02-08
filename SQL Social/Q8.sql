@@ -1,0 +1,2 @@
+SELECT COUNT(*) - COUNT(DISTINCT name)
+FROM Highschooler;

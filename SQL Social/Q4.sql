@@ -1,0 +1,10 @@
+SELECT name, grade
+FROM Highschooler
+WHERE ID NOT IN (
+  SELECT DISTINCT ID1
+  FROM Likes
+  UNION
+  SELECT DISTINCT ID2
+  FROM Likes
+)
+ORDER BY grade, name;

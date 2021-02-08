@@ -1,0 +1,3 @@
+SELECT title
+FROM Movie
+WHERE mId NOT IN (SELECT mID FROM Rating);
